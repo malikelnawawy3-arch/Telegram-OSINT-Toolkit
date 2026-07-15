@@ -6,7 +6,7 @@
 
 **High-end, local, production-ready Telegram intelligence gathering tool** built for **OSINT**, cybersecurity research, law enforcement, and military intelligence applications.
 
-Developed with **Telethon** — supports **proxy/Tor**, **bulk monitoring**, advanced keyword search, full chat exports, member enumeration, and persistent SQLite storage.
+Developed with **Telethon** supports **proxy/Tor**, **bulk monitoring**, advanced keyword search, full chat exports, member enumeration, and persistent SQLite storage.
 
 ---
 
