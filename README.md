@@ -174,4 +174,3 @@ GitHub: [@AnuragRoy485](https://github.com/AnuragRoy485)
 🍴 Feel free to **Fork** and contribute improvements.
 
 For feature requests, bug reports, Docker + Tor setup, AI analysis integration, or custom intelligence pipelines — open an **Issue** or **Pull Request**.
-```
